@@ -1,4 +1,8 @@
-class Hero:
-    """The hero blueprint will be implemented later in the project."""
+import random
+from character import Character
 
-    pass
+class Hero(Character):
+    def __init__(self, name="Hero"):
+        self.name = name
+        self.health = 100
+        self.attack_power = 15
