@@ -1,4 +1,7 @@
-class Hero:
-    """The hero blueprint will be implemented later in the project."""
+from entity import Entity
 
-    pass
+class Hero(Entity):
+    def __init__(self, name, health=200):
+        super().__init__(name, health= health, attack_power= 50)
+    def superAttack(self):
+        return 9999
